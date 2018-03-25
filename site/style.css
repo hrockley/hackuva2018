@@ -85,3 +85,12 @@ html,body {
   margin:10px;
   padding-top: 30px;
 }
+
+#fp{
+  width: 80%;
+  height: 80%;
+  padding: 3px;
+  border: 5px solid #0918a0;
+  border-radius: 50px;
+  display: none;
+}

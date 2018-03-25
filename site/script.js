@@ -31,5 +31,13 @@ $(function(){
 
 function getSearch(){
   var location = $("#search").val();
-  console.log(location);
+  console.log("location: " + location);
+  $("#welcome").text("" + location);
+  newImage();
+}
+
+function newImage(){
+  let imageNew = "http://www.utdallas.edu/housing/img/floorplan/b3.png";
+  $("#fp").css('display', 'inline')
+  $("#fp").attr('src', imageNew);
 }
