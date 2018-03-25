@@ -28,24 +28,60 @@ html,body {
     vertical-align: middle;
     line-height: 40px;
     border: none;
-    color: white;
+    color: blue;
     background: transparent;
-    border-bottom: white 1px solid;
+    border-bottom: blue 1px solid;
 }
 #search:focus {
   outline: none;
 }
 
 .fa-search {
-  font-size: 18px;
+  font-size: 24px;
+  color: blue;
 }
 
-#search {
-    font-size: 32px;
-    vertical-align: middle;
-    line-height: 40px;
-    border: none;
-    color: white;
-    background: transparent;
-    border-bottom: white 1px solid;
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: arial;
+    text-align: center;
+    margin:0;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/* 00aa69 */
+
+#title{
+  background-color: #8fc196;
+  height: 10%;
+  top:0;
+  margin: 0;
+}
+
+#welcome{
+  bottom:0;
+  margin:0;
+  padding-top: 20px;
+}
+
+#intro{
+  background-color: #8f94c1;
+  height: 90%;
+  top:0;
+  margin: 0;
+  padding:0
+}
+
+#intro-paragraph{
+  font-size: 24px;
+  margin:10px;
+  padding-top: 30px;
 }
