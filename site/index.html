@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDqdxw2GqUZAmy7cMJBYC6Cf5nz0LOfXFc",
+    authDomain: "floorplans-4c8c8.firebaseapp.com",
+    databaseURL: "https://floorplans-4c8c8.firebaseio.com",
+    projectId: "floorplans-4c8c8",
+    storageBucket: "floorplans-4c8c8.appspot.com",
+    messagingSenderId: "635590278354"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
   </head>
 
   <body>
@@ -13,10 +27,11 @@
       <div id="map"> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNyU4104B9l7h8yvcNBoaq6zyHQNU1AE8&callback=initMap"> </script> </div>
       <div id="layout">
         <div class="sidenav">
-          <div id="title"><h1 id="welcome"> Welcome to Site</h1></div>
+          <div id="title"><h2 id="welcome"> Welcome to Floor Plans</h2></div>
           <div id="intro">
-            <p id="intro-paragraph"> [Site] is a tool to reduce the time it takes for a 911 responder to get your location, and they recieve a location as precise as the room an emergency caller might be in.<p>
+            <p id="intro-paragraph"> Floor Plans is a tool to reduce the time it takes for a 911 responder to get your location.<p>
             <img id="fp" src="https://www.roomsketcher.com/wp-content/uploads/2015/11/RoomSketcher-2-Bedroom-Floor-Plans.jpg" /> <!-- placeholder photo -->
+            <canvas id="canvas"s></canvas>
           </div>
         </div>
         <div class="search-bar" style="margin: 0px; margin-left: 180px;">

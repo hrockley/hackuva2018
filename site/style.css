@@ -73,7 +73,7 @@ html,body {
 }
 
 #intro{
-  background-color: #8f94c1;
+  background-color: #8db0c6;
   height: 90%;
   top:0;
   margin: 0;
@@ -93,4 +93,11 @@ html,body {
   border: 5px solid #0918a0;
   border-radius: 50px;
   display: none;
+  filter: grayscale(100%);
+}
+
+#canvas{
+  position: absolute;
+  width: 240px;
+  height: 310px;
 }
